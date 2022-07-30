@@ -11,7 +11,127 @@
 }
 
 body {
+  background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  background-position: top left, bottom center;
   font-family: "League Spartan", sans-serif;
+  padding: 5.4666666667rem 1.6rem 6.6rem;
+  position: relative;
+}
+
+.main {
+  z-index: 2;
+}
+
+.intro__heading {
+  font-size: 2.6666666667rem;
+  line-height: 0.8;
+  font-weight: 700;
+  letter-spacing: -1.43px;
+  margin-bottom: 0.425em;
+  text-align: center;
+  color: hsl(300deg, 43%, 22%);
+}
+
+.intro__paragraph {
+  font-size: 1.2666666667rem;
+  line-height: 1.3157894737;
+  font-weight: 500;
+  letter-spacing: -0.633333px;
+  color: hsl(303deg, 10%, 53%);
+  text-align: center;
+  margin-bottom: 2.0526315789em;
+}
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 1.0666666667rem;
+  margin-bottom: 3.2666666667rem;
+}
+
+.rating {
+  width: 100%;
+  max-width: 29.6666666667rem;
+  background-color: hsl(300deg, 24%, 96%);
+  border-radius: 8px;
+  padding-top: 1.0666666667rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rating__stars {
+  width: 7.77rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating__caption {
+  font-size: 1.1333333333rem;
+  line-height: 0.9411764706;
+  font-weight: 700;
+  color: hsl(300deg, 43%, 22%);
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 1.0666666667rem;
+}
+
+.testimonial {
+  background-color: hsl(300deg, 43%, 22%);
+  color: hsl(0deg, 0%, 100%);
+  padding: 2.6666666667rem 2.1333333333rem 2.3333333333rem;
+  border-radius: 8px;
+}
+
+.testimonial__user-info {
+  display: flex;
+  gap: 1.5333333333rem;
+  font-size: 1.1333333333rem;
+  line-height: 0.9411764706;
+  margin-bottom: 1.5333333333rem;
+}
+
+.testimonial__profile-pic {
+  width: 2.6666666667rem;
+  border-radius: 100%;
+}
+
+.testimonial__name {
+  font-weight: 700;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2666666667rem;
+}
+
+.testimonial__verified {
+  font-weight: 400;
+  color: hsl(333deg, 80%, 67%);
+}
+
+.testimonial__quote {
+  font-size: 1.1333333333rem;
+  line-height: 1.2941176471;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+}
+
+.attribution {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1em;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
 }
 
 /*# sourceMappingURL=style.css.map */

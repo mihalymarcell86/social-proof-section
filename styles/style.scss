@@ -3,5 +3,118 @@
 @include setup;
 
 body {
+  background: {
+    image: url("../images/bg-pattern-top-mobile.svg"),
+      url("../images/bg-pattern-bottom-mobile.svg");
+    repeat: no-repeat, no-repeat;
+    size: contain, contain;
+    position: top left, bottom center;
+  }
   font-family: $font-league-spartan;
+  padding: rem(82px) rem(24px) rem(99px);
+  position: relative;
+}
+
+.main {
+  z-index: 2;
+}
+
+.intro__heading {
+  @include setFont(rem(40px), 32px, 700);
+  letter-spacing: -1.43px;
+  margin-bottom: em(17px, 40px);
+  text-align: center;
+  color: color(very-dark-magenta);
+}
+
+.intro__paragraph {
+  @include setFont(rem(19px), 25px, 500);
+  letter-spacing: -0.633333px;
+  color: color(dark-grayish-magenta);
+  text-align: center;
+  margin-bottom: em(39px, 19px);
+}
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16px);
+  margin-bottom: rem(49px);
+}
+
+.rating {
+  width: 100%;
+  max-width: rem(445px);
+  background-color: color(light-grayish-magenta);
+  border-radius: 8px;
+  padding-top: rem(16px);
+  padding-bottom: rem(15px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(15px);
+}
+
+.rating__stars {
+  width: rem(116.55px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating__caption {
+  @include setFont(rem(17px), 16px, 700);
+  color: color(very-dark-magenta);
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16px);
+}
+
+.testimonial {
+  background-color: color(very-dark-magenta);
+  color: color(white);
+  padding: rem(40px) rem(32px) rem(35px);
+  border-radius: 8px;
+}
+
+.testimonial__user-info {
+  display: flex;
+  gap: rem(23px);
+  @include setFont(rem(17px), 16px);
+  margin-bottom: rem(23px);
+}
+
+.testimonial__profile-pic {
+  width: rem(40px);
+  border-radius: 100%;
+}
+
+.testimonial__name {
+  font-weight: 700;
+  margin-top: rem(3px);
+  margin-bottom: rem(4px);
+}
+
+.testimonial__verified {
+  font-weight: 400;
+  color: color(soft-pink);
+}
+
+.testimonial__quote {
+  @include setFont(rem(17px), 22px, 500);
+  letter-spacing: -0.3px;
+}
+
+.attribution {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1em;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
